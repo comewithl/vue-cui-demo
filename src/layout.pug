@@ -1,0 +1,15 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE-EDGE")
+        block header
+        title=(htmlWebpackPlugin.options.title || "")
+        script(src="js/polyfill.min.js")
+body
+    div.container#app
+        block body
+    block footer
+
+
